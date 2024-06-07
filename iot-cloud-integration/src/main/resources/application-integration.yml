@@ -1,0 +1,5 @@
+iot:
+  # 使用环境变量配置，避免泄漏 -Diot.accessKeyId=xxx -Diot.accessKeySecret=xxx
+  accessKeyId:
+  accessKeySecret:
+  endpoint: iot.cn-shanghai.aliyuncs.com

@@ -31,11 +31,12 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spring-boot.version>2.7.17</spring-boot.version>
         <!--第三方依赖-->
-        <luna-common.version>2.5.3</luna-common.version>
+        <luna-common.version>2.6.0</luna-common.version>
         <httpclient5.version>5.2.1</httpclient5.version>
         <mybatis-plus.version>3.5.4.1</mybatis-plus.version>
         <mybatis-plush-dymaic.version>4.2.0</mybatis-plush-dymaic.version>
         <mysql-version>8.0.32</mysql-version>
+        <iot.version>5.1.0</iot.version>
         <!--本地依赖-->
         <iot-cloud.version>1.0.0-SNAPSHOT</iot-cloud.version>
         <project.version>1.0.0-SNAPSHOT</project.version>
@@ -64,6 +65,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/com.aliyun/iot20180120 -->
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>iot20180120</artifactId>
+                <version>${iot.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.github.lunasaw</groupId>
                 <artifactId>luna-common</artifactId>

@@ -2,7 +2,7 @@ spring:
   application:
     name: iot-cloud
   profiles:
-    active: dev,repo
+    active: dev,repo,integration
 
 logging:
   config: classpath:log/logback-spring.xml
