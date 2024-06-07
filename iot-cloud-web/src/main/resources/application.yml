@@ -1,6 +1,6 @@
 spring:
   application:
-    name: project-start
+    name: iot-cloud
   profiles:
     active: dev,repo
 

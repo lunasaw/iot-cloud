@@ -2,7 +2,7 @@
 <configuration debug="false">
     <!--定义日志文件的存储地址 -->
     <springProperty scop="context" name="spring.application.name" source="spring.application.name" defaultValue=""/>
-    <property name="LOG_HOME" value="logs"/>
+    <property name="LOG_HOME" value="${log.home}"/>
 
     <substitutionProperty name="log.pattern"
                           value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS,GMT+8}){faint} %clr(%5p) %clr(---){faint} %clr(%-1.30logger{0}){cyan} %clr(:){faint} %X{traceId} %X{deviceId} %m%n%wEx"/>
