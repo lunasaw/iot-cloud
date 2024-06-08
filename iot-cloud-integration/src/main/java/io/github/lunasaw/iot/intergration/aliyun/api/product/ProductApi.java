@@ -28,6 +28,8 @@ public class ProductApi extends AbstractAliyunApi {
         if (StringUtils.isBlank(request.getIotInstanceId())) {
             request.setIotInstanceId(aliyunIotConfig.getIotInstanceId());
         }
+        Assert.notNull(request.getProductName(), "productName is null");
+        Assert.notNull(request.getNodeType(), "nodeType is null");
         return getClient().createProductWithOptions(request, runtime);
     }
 
