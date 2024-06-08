@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>io.github.lunasaw</groupId>
-            <artifactId>iot-cloud-common</artifactId>
+            <artifactId>iot-cloud-manager</artifactId>
         </dependency>
 
         <dependency>

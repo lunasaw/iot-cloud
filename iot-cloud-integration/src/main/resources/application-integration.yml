@@ -3,3 +3,4 @@ iot:
   accessKeyId:
   accessKeySecret:
   endpoint: iot.cn-shanghai.aliyuncs.com
+  iotInstanceId: iot-06z00f1einee6ko
