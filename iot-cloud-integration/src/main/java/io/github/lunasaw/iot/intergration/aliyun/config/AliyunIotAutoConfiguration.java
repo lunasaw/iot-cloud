@@ -40,10 +40,10 @@ public class AliyunIotAutoConfiguration {
 
     private Client createClient() {
         String accessKeyId = Optional.ofNullable(aliyunIotConfig.getAccessKeyId()).filter(StringUtils::isNotBlank)
-                .orElse(System.getProperty(IotConstant.Client.ACCESS_KEY_ID));
+                .orElse(System.getenv(IotConstant.Client.ACCESS_KEY_ID));
         Assert.isTrue(StringUtils.isNotBlank(accessKeyId), "accessKeyId is null");
         String accessKeySecret = Optional.ofNullable(aliyunIotConfig.getAccessKeySecret()).filter(StringUtils::isNotBlank)
-                .orElse(System.getProperty(IotConstant.Client.ACCESS_KEY_SECRET));
+                .orElse(System.getenv(IotConstant.Client.ACCESS_KEY_SECRET));
         Assert.isTrue(StringUtils.isNotBlank(accessKeySecret), "accessKeySecret is null");
         String endpoint = Optional.ofNullable(aliyunIotConfig.getEndpoint()).filter(StringUtils::isNotBlank)
                 .orElse(IotConstant.ENDPOINT);

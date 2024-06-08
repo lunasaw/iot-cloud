@@ -7,6 +7,7 @@
 
 iot-cloud
 
+对阿里云IOT云平台SDK接入包装
 
 
 > 引入

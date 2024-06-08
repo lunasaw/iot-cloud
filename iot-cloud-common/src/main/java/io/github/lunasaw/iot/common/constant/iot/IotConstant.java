@@ -7,8 +7,8 @@ package io.github.lunasaw.iot.common.constant.iot;
 public interface IotConstant {
 
     interface Client{
-        String ACCESS_KEY_ID = "accessKeyId";
-        String ACCESS_KEY_SECRET = "accessKeySecret";
+        String ACCESS_KEY_ID = "ACCESS_KEY_ID";
+        String ACCESS_KEY_SECRET = "ACCESS_KEY_SECRET";
     }
 
     String ENDPOINT = "iot.cn-shanghai.aliyuncs.com";

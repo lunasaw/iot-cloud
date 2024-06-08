@@ -3,6 +3,7 @@ package io.github.lunasaw.app.produect;
 import com.alibaba.fastjson2.JSON;
 import com.aliyun.iot20180120.models.CreateProductRequest;
 import com.aliyun.iot20180120.models.CreateProductResponse;
+import com.aliyun.iot20180120.models.QueryProductListResponse;
 import io.github.lunasaw.app.ApiTest;
 import io.github.lunasaw.iot.intergration.aliyun.domain.AliyunIotConfig;
 import io.github.lunasaw.iot.intergration.aliyun.api.product.ProductApi;
@@ -31,6 +32,19 @@ public class ProductApiTest extends ApiTest {
 
         CreateProductResponse product = productApi.createProduct(request, runtime);
         System.out.println(JSON.toJSONString(product));
+    }
+
+    @Test
+    public void btest() {
+
+        com.aliyun.iot20180120.models.QueryProductListRequest queryProductListRequest = new com.aliyun.iot20180120.models.QueryProductListRequest();
+        queryProductListRequest.setPageSize(10);
+        queryProductListRequest.setCurrentPage(1);
+        com.aliyun.teautil.models.RuntimeOptions runtime = new com.aliyun.teautil.models.RuntimeOptions();
+
+        QueryProductListResponse queryProductListResponse = productApi.queryProductListWithOptions(queryProductListRequest, runtime);
+        System.out.println(JSON.toJSONString(queryProductListResponse));
+
     }
 
 }
